@@ -21,9 +21,10 @@ setup: |
   每次分析前**必须先读取**该文件获取当前持仓数据，再代入实时行情进行分析。
   文档中不出现任何实际持仓代码、成本、数量、预警价。
 
-  输出位置：
-  - 飞书：用户配置的股票文件夹（首次使用在 MEMORY.md 中记录路径）
-  - 本地：`~/.openclaw/workspace/stock-analysis/` 目录
+  输出偏好（安装时选择并记录在 MEMORY.md）：
+  - 飞书文档（默认）— 在用户飞书股票文件夹创建文档
+  - 本地文档 — 在 `~/.openclaw/workspace/stock-analysis/` 目录生成 .md 文件
+  - Notion（待接入）— 未来可扩展
 permissions:
   paths:
     - "~/.openclaw/workspace/skills/stock-analysis/**"
